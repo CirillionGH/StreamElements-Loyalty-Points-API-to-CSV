@@ -1,0 +1,98 @@
+READ ME
+
+Please follow the directions to set up Python and run the script. 
+
+
+
+Step 1: Gather Your StreamElements Credentials
+
+Before running any script, you need your unique identifier and API key.
+
+Log into your StreamElements Dashboard.
+
+Click on your Profile Icon in the top right-hand corner and select Channel Settings.
+
+Copy your Account ID (this will serve as your CHANNEL_ID).
+
+Look down the page for your JWT Token and copy that full token string. Keep this confidential!
+
+
+
+Step 2: Run the Migration Script
+
+Ensure you have Python installed on your machine. Create a Notepad document, paste the code, and save the file se_export.py. For the easiest integration, save the file to C:\Users\(your user) 
+
+Make sure to replace YOUR_CHANNEL_ID_HERE and YOUR_JWT_TOKEN_HERE with the strings you copied in Step 1 to line 7 and 8 in the script. 
+
+Run this in your command line terminal using: python se_export.py
+--->If you run into issues here, try typing the following: python -m pip install requests 
+--->This will install necessary python updates. 
+
+NOTE: You do not need to run this in Python script, you can run it in your regular terminal once you have saved the file to C:\Users\(your user)
+
+
+
+FOR MIXITUP
+
+Step 3: Import the Data Into MixItUp
+Now that you have your perfectly formatted streamelements_loyalty.csv file, it's time to hand it off to MixItUp.
+
+Open your MixItUp Bot desktop application.
+
+Expand the left navigation menu and head over to Consumables -> Currency (or create your new primary loyalty currency if you haven't yet).
+
+Open the settings/edit window for your chosen currency and click the Import Data button.
+
+Browse and select your newly minted streamelements_loyalty.csv file.
+
+MixItUp will prompt you to map your data columns via numbers. In our generated spreadsheet:
+
+Set User Name to Column 1
+
+Set your Currency Amount to Column 2
+
+Click Import and let the bot sync the values.
+
+
+
+TROUBLESHOOTING
+
+Step 1: Install Python
+
+Go to the official Python Downloads Page " https://www.python.org/downloads/" and download the latest version for your operating system (Windows or macOS).
+
+Launch the installer installer file you just downloaded.
+
+CRITICAL STEP (Windows Users): At the very bottom of the first installer window, check the box that says "Add python.exe to PATH" (or "Add Python to environment variables").
+
+If this step is missed, we cover it above by using the pip install requests.
+
+Click Install Now and let it finish.
+
+
+Step 2: Save the Script Correctly
+
+Next, we need to turn that code block into an actual script file on your computer.
+
+Open a plain text editor like Notepad (Windows) or TextEdit (Mac).
+
+Note: Avoid word processors like Microsoft Word, as they inject hidden formatting symbols that break code.
+
+Copy the entire Python script provided in the previous response and paste it into your text editor.
+
+Replace YOUR_CHANNEL_ID_HERE and YOUR_JWT_TOKEN_HERE with your actual StreamElements keys inside the quotation marks.
+
+Go to File > Save As.
+
+Name the file exactly se_export.py.
+
+-Ensure the file extension is truly .py.
+
+-->On Windows, change the "Save as type" dropdown from Text Documents (.txt)* to All Files (.). Otherwise, it will save as se_export.py.txt, which won't run.
+
+Save it somewhere easy to find, like your Desktop or a dedicated Projects folder.
+
+
+
+Cheers, 
+Cirillion 
