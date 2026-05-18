@@ -45,13 +45,15 @@ Open the settings/edit window for your chosen currency and click the Import Data
 
 Browse and select your newly minted streamelements_loyalty.csv file.
 
-MixItUp will prompt you to map your data columns via numbers. In our generated spreadsheet:
-
-Set User Name to Column 1
-
-Set your Currency Amount to Column 2
-
 Click Import and let the bot sync the values.
+
+SIDE NOTE:
+
+Import the file directly into Google Sheets for automatic spacing. Once created, copy the file, then paste it into the same txt file from the notepad and click save. This will take out the "," and add a space between each name and number. Lastly, remove the top part that says username and points so its only users with their points in the file. It should look like this:
+
+Cirillion 198298
+NameTwo 128931
+NameThree 120392
 
 
 
